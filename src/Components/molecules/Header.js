@@ -1,9 +1,9 @@
 import React,{ useState,useEffect } from "react";
 import styled from "styled-components";
-import HeaderTitle from "./HeaderTitle";
-import SearchInput from "./SearchInput";
-import LoginButton from "./LoginButton";
-import SignupButton from "./SignupButton";
+import HeaderTitle from "../atoms/HeaderTitle";
+import SearchInput from "../atoms/SearchInput";
+import LoginButton from "../atoms/LoginButton";
+import SignupButton from "../atoms/SignupButton";
 
 export default function Header(props){
     return(

@@ -1,7 +1,7 @@
 import React,{ useState,useEffect } from "react";
 import styled from "styled-components";
-import HeaderContainer from "./HeaderContainer";
-import ContentContainer from "./ContentContainer";
+import HeaderContainer from "../organisms/HeaderContainer";
+import ContentContainer from "../organisms/ContentContainer";
 
 export default function Body(props){
     return (

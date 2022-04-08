@@ -1,9 +1,9 @@
 import React,{ useState,useEffect } from "react";
 import styled from "styled-components";
-import UserInfo from "./UserInfo";
-import Title from "./Title";
-import TagsContainer from "./TagsContainer";
-import Likes from "./Likes";
+import UserInfo from "../molecules/UserInfo";
+import Title from "../atoms/Title";
+import TagsContainer from "../molecules/TagsContainer";
+import Likes from "../atoms/Likes";
 
 export default function Article(props){
     const data = props.data;

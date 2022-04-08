@@ -1,7 +1,7 @@
 import React,{ useState,useEffect } from "react";
 import styled from "styled-components";
-import PostDay from "./PostDay";
-import UserInfoCore from "./UserInfoCore";
+import PostDay from "../atoms/PostDay";
+import UserInfoCore from "../atoms/UserInfoCore";
 
 export default function UserInfo(props){
     const user = props.user;
