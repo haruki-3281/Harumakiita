@@ -3,31 +3,20 @@ import styled from "styled-components";
 
 export default function HeaderTitle(props){
     return(
-        <$HeaderTitle>
-            <p>{props.title}</p>
-            <a href="http://localhost:8080"></a>
+        <$HeaderTitle className={props.className}>
+            <a href={props.href}>{props.title}</a>
         </$HeaderTitle>
     );
 };
 
 const $HeaderTitle = styled.div`
     position:relative;
-    color:white;
-    
     width:fit-content;
 
-    p{
-        margin:0;
-        font-family: system-ui;
-        font-weight:bold;
-        font-size:1.5rem;
-    }
+    font-family: system-ui;
+    font-weight:bold;
 
-    > a {
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
+    a {
+        text-decoration:none;
     }
 `;

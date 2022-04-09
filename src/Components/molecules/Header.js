@@ -9,17 +9,51 @@ export default function Header(props){
     return(
         <$Header>
             <$HeaderItemsContainer>
-                <HeaderTitle title={props.title} />
+                <$HeaderTitle 
+                    title={props.title} 
+                    href="http://localhost:8080"
+                />
 
                 <$HeaderItems>
-                    <SearchInput />
-                    <LoginButton />
-                    <SignupButton />
+                    <$SearchInput />
+                    <$LoginButton 
+                        href="https://www.yahoo.co.jp"
+                    />
+                    <$SignupButton
+                        href="https://www.yahoo.co.jp"
+                    />
                 </$HeaderItems>
             </$HeaderItemsContainer>
         </$Header>
     );
 };
+
+const $HeaderTitle = styled(HeaderTitle)`
+    font-size:2rem;
+    a {
+        color:white;
+    }
+`;
+
+const $SearchInput = styled(SearchInput)`
+    width:20rem;
+    height:2.5rem;
+
+    .searchIcon {
+        font-size:0.75rem;
+        height:fit-content;
+        left:0.75rem;
+    }
+`;
+
+const $LoginButton = styled(LoginButton)`
+    color:white;
+`;
+
+const $SignupButton = styled(SignupButton)`
+    padding:0.5rem;
+    color:white;
+`;
 
 const $Header = styled.div`
     position:relative;

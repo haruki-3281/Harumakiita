@@ -4,14 +4,6 @@ import styled from "styled-components";
 export default function Tag(props){
     const [hover,setHover] = useState(false);
 
-    const handleHover = function(){
-        setHover( true );    
-    };
-
-    const handleHoverOut = function(){
-        setHover( false );
-    };
-
     return(
         <$Tag 
             hover={hover}
