@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import HeaderTitle from "../atoms/HeaderTitle";
-import SearchInput from "../atoms/SearchInput";
-import LoginButton from "../atoms/LoginButton";
-import SignupButton from "../atoms/SignupButton";
+import HeaderTitle from "../../atoms/HeaderTitle";
+import SearchInput from "../../atoms/SearchInput";
+import LoginButton from "../../atoms/LoginButton";
+import SignupButton from "../../atoms/SignupButton";
 
 export const $HeaderTitle = styled(HeaderTitle)`
     font-size:2rem;
@@ -12,8 +12,8 @@ export const $HeaderTitle = styled(HeaderTitle)`
 `;
 
 export const $SearchInput = styled(SearchInput)`
-    width:20rem;
-    height:2.5rem;
+    width: 20rem;
+    height: 2.5rem;
 
     .searchIcon {
         font-size:0.75rem;
