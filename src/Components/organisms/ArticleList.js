@@ -1,22 +1,12 @@
-import React,{ useState,useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Article from "./Article";
+import { useGetArticle } from "../../hooks";
 
 const api = "dummy.json";
 
 export default function ArticleList(){
-    const [list,setList] = useState([]);
-
-    useEffect(()=>{
-        fetch(api,{
-            headers : { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
-        .then( res => res.json() )
-        .then( data => setList( data ) );
-    },[]);
+    const list = useGetArticle();
 
     return (
         <$ArticleList>
