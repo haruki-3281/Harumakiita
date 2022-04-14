@@ -1,7 +1,7 @@
 import React,{ useState,useEffect } from "react";
 import styled from "styled-components";
 import Navigator from "./Navigator";
-import Header from "../molecules/Header";
+import Header from "./Header";
 
 export default function HeaderContainer(props){
     return (

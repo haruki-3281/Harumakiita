@@ -54,4 +54,8 @@ const $Article = styled.div`
         margin-left:0.5rem;
         font-size:0.85rem;
     }
+
+    @media screen and (max-width:480px){
+        padding:0.5rem;
+    }
 `;

@@ -30,7 +30,7 @@ export default function ArticleList(){
 const $ArticleList = styled.div`
     position:relative;
 
-    padding:1rem;
+    width:100%;
     grid-column: 2;
 
     display:flex;
