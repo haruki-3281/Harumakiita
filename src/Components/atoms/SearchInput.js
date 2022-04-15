@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SearchInput(props){
     return(
-        <$SearchInput>
-            <$SearchIcon>
+        <$SearchInput className={props.className}>
+            <$SearchIcon className="searchIcon">
                 <FontAwesomeIcon icon={faSearch} />
             </$SearchIcon>
             <input placeholder="キーワードを入力" />
@@ -21,19 +21,10 @@ const $SearchIcon = styled.div`
     top:0;
     bottom:0;
     margin:auto;
-
-    left:0.75rem;
-    
-    font-size:0.75rem;
-    height:fit-content;
-
 `;
 
 const $SearchInput = styled.div`
     position:relative;
-
-    width:20rem;
-    height:2.5rem;
 
     > input {
         width:100%;

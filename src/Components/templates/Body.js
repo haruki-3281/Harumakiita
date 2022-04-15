@@ -1,7 +1,7 @@
 import React,{ useState,useEffect } from "react";
 import styled from "styled-components";
-import HeaderContainer from "./HeaderContainer";
-import ContentContainer from "./ContentContainer";
+import HeaderContainer from "../organisms/HeaderContainer";
+import ContentContainer from "../organisms/ContentContainer";
 
 export default function Body(props){
     return (
@@ -15,6 +15,7 @@ export default function Body(props){
 const $Body = styled.div`
     display: grid;
     grid-template-rows:9rem 1fr;
+    grid-template-columns: 100%;
 
     width:100%;
     height:100%;

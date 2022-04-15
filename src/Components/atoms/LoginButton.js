@@ -3,14 +3,16 @@ import styled from "styled-components";
 
 export default function LoginButton(props){
     return(
-        <$LoginButton href="https://www.yahoo.co.jp">
+        <$LoginButton 
+            className={props.className}
+            href={props.href}
+        >
             {"ログイン"}
         </$LoginButton>
     );
 };
 
 const $LoginButton = styled.a`
-    color:white;
     text-decoration:none;
 
     :hover{

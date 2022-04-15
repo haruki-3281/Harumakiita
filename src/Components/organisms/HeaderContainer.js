@@ -1,8 +1,7 @@
-import React,{ useState,useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Navigator from "./Navigator";
 import Header from "./Header";
-import SearchInput from "./SearchInput";
 
 export default function HeaderContainer(props){
     return (
